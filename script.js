@@ -11,10 +11,10 @@ if(m < 16){
   alert('error')
 }
 
-var Hour = +prompt("Введите час (от 0 до 23):");
+var Hour = +prompt("Введите час:");
 
 if (isNaN(Hour) || Hour < 0 || Hour > 23) {
-    alert("Некорректный ввод. Введите число от 0 до 23.");
+    alert("Некорректное число");
 } else {
     let timePeriod;
     let hour
@@ -53,7 +53,7 @@ let num2 = +prompt("Введите второе число:");
 let num3 = +prompt("Введите третье число:");
 
 if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-    alert("Некорректный ввод. Введите числа.");
+    alert("Некорректный ввод.");
 } else {
     let minNumber = Math.min(num1, num2, num3);
     let maxNumber = Math.max(num1, num2, num3);
